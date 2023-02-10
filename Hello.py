@@ -7,7 +7,7 @@ st.set_page_config(page_title="Grain Statistics Weekly", layout='wide',)
 
 with st.sidebar:
     add_grain = st.selectbox("Select Commodity", ['Wheat', 'Barley', 'Corn', 'Oat', 'Rye','Canola', 'Soybeans','Amber Durum'])   
-    add_item = st.selectbox("Select Variable", ['Domestic', 'Producer Deliveries', 'Exports', 'Producer Shipments'])   
+    add_item = st.selectbox("Select Variable", ['Exports', 'Producer Deliveries', 'Producer Shipments', 'Domestic'])   
 
 def main():
     gcs = GCS('sm_data_bucket', streamlit=True)
