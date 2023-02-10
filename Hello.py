@@ -1,6 +1,6 @@
 import streamlit as st
 from gcs import GCS
-from canada_chart import Canada_Processed
+from can_char import Canada_Processed
 
 
 st.set_page_config(page_title="Grain Statistics Weekly", layout='wide',)
