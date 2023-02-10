@@ -1,0 +1,5 @@
+data/
+main.py
+.streamlit/
+ServiceKey_GCS.json
+resources.py
