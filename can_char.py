@@ -73,7 +73,7 @@ class Canada_Processed(object):
             fig.add_trace(go.Bar(x=self.df_monthly_pivot.index, y=self.df_monthly_pivot[year], name=str(year), marker_color=color))
 
         fig.update_layout(title=f'Canada - {self.grain} {self.item}, Monthly', hovermode="x unified", font=dict(color='rgb(82, 82, 82)', family='Arial'),width=1000,height=500,
-                            xaxis=dict(gridcolor='#FFFFFF',tickformat="%b %d", linecolor='rgb(204, 204, 204)', linewidth=1, ticks='outside', tickfont=dict(size=12)),
+                            xaxis=dict(ticktext=['Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'], gridcolor='#FFFFFF',tickformat="%b %d", linecolor='rgb(204, 204, 204)', linewidth=1, ticks='outside', tickfont=dict(size=12)),
                             yaxis=dict(gridcolor='#F8F8F8', tickfont=dict(size=12)),
                             plot_bgcolor='white')
         return fig
